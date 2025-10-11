@@ -35,7 +35,7 @@ while True:
     if g == "":
         print("Golongan darah tidak boleh kosong.")
         continue
-    elif g not in ["A", "B", "AB", "O"]:
+    elif g != 'A' and g != 'B' and g != 'AB' and g != 'O':
         print("Golongan darah tidak valid.")
         continue
 
@@ -43,7 +43,7 @@ while True:
     if r == "":
         print("Rhesus tidak boleh kosong.")
         continue
-    elif r not in ["+", "-"]:
+    elif r != "+" and r != "-":
         print("Rhesus tidak valid.")
         continue
 
